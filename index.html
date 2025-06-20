@@ -197,84 +197,93 @@
                 
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
                
-                  <form id="bookingForm">
-    <input type="hidden" name="access_key" value="000d45fb-f72a-411f-a6d3-085e961ec9c4">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="fname" placeholder="Your First Name">
-                                    <label for="name">Your First Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="lname" placeholder="Your Last Name">
-                                    <label for="name">Your Last Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email ID</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="tel" class="form-control" id="mobile" placeholder="Your Mobile Number">
-                                    <label for="mobile">Your Mobile Number</label>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="number" class="form-control" id="neet" placeholder="NEET Result">
-                                    <label for="neet">NEET Result in Marks</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="destination">
-                                        <option selected disabled>You Can Select Destination</option>
-                                    <option>Russia</option>
-<option>Kyrgyzstan</option>
-<option>Vietnam</option>
-<option>Uzbekistan</option>
-<option>Kazakhstan</option>
-<option>Moldova</option>
-<option>Armenia</option>
-<option>Philippines</option>
-<option>United Kingdom</option>
-<option>Canada</option>
-<option>Australia</option>
-<option>United States</option>
+                 <form id="bookingForm">
+  <input type="hidden" name="access_key" value="000d45fb-f72a-411f-a6d3-085e961ec9c4" />
+  
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="fname" name="fname" placeholder="Your First Name" required />
+        <label for="fname">Your First Name</label>
+      </div>
+    </div>
 
-                                    </select>
-                                    <label for="destination">Preferred Study Destination</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="year">
-                                        <option selected disabled>Select Year</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2025">2025</option>
-                                        <option value="2026">2026</option>
-                                    </select>
-                                    <label for="year">Preferred Year</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn text-dark w-100 py-3" style="border:1px solid white" type="submit">Book Now</button>
-                            </div>
-                        </div>
-                    </form>
-                      <div id="bookingResult" class="text-white pt-2"></div>
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="lname" name="lname" placeholder="Your Last Name" required />
+        <label for="lname">Your Last Name</label>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required />
+        <label for="email">Your Email ID</label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Your Mobile Number" required />
+        <label for="mobile">Your Mobile Number</label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="number" class="form-control" id="neet" name="neet" placeholder="NEET Result" />
+        <label for="neet">NEET Result in Marks</label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-floating">
+        <select class="form-select" id="destination" name="destination">
+          <option selected disabled>You Can Select Destination</option>
+          <option>Russia</option>
+          <option>Kyrgyzstan</option>
+          <option>Vietnam</option>
+          <option>Uzbekistan</option>
+          <option>Kazakhstan</option>
+          <option>Moldova</option>
+          <option>Armenia</option>
+          <option>Philippines</option>
+          <option>United Kingdom</option>
+          <option>Canada</option>
+          <option>Australia</option>
+          <option>United States</option>
+        </select>
+        <label for="destination">Preferred Study Destination</label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-floating">
+        <select class="form-select" id="year" name="year">
+          <option selected disabled>Select Year</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+        </select>
+        <label for="year">Preferred Year</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-floating">
+        <textarea class="form-control" id="message" name="message" placeholder="Special Request" style="height: 100px"></textarea>
+        <label for="message">Message</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button class="btn text-dark w-100 py-3" style="border:1px solid white" type="submit">Book Now</button>
+    </div>
+  </div>
+</form>
+
+<div id="bookingResult" class="text-white pt-2"></div>
+
                 </div>
             </div>
         </div>
