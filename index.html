@@ -120,6 +120,9 @@
         <!-- Header End -->
 
 
+         
+
+    
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5 mt-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -193,19 +196,26 @@
 
             <!-- Image Column -->
         <div class="col-lg-6 order-1 order-lg-2 text-center">
-  <div class="position-relative d-inline-block w-100">
-    <img src="img/IMG_20250604_120058.jpg" 
-         alt="Dream Doctor Educational Consultant" 
-         class="img-fluid w-100" 
-         style="height: auto;" />
-
-    <h1 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
-               color: white; background-color: rgba(0, 0, 0, 0.6); 
-               padding: 10px 20px; border-radius: 8px; font-size: 1.5rem; 
-               width: 90%; max-width: 600px; text-align: center;">
-        Managing Director: <br> DR. VENKATESH MANOKARAN
-    </h1>
+ <div class="position-relative d-inline-block w-100" style="max-width: 600px;">
+  <img src="img/IMG_20250604_120058.jpg" 
+       alt="Dream Doctor Educational Consultant" 
+       class="img-fluid w-100" 
+       style="height: auto; display: block;" />
+  
+  <button type="button" class="btn-play" data-bs-toggle="modal"
+          data-src="img/V36_Nexus_DDedu_P3.mp4" data-bs-target="#videoModal"
+          style="position: absolute; bottom: 10%; left: 50%; transform: translate(-50%, -50%);">
+    <span></span>
+  </button>
+  
+  <h1 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+             color: white; background-color: rgba(0, 0, 0, 0.6); 
+             padding: 10px 20px; border-radius: 8px; font-size: 1.5rem; 
+             width: 90%; max-width: 600px; text-align: center; margin: 0;">
+    Managing Director: <br> DR. VENKATESH MANOKARAN
+  </h1>
 </div>
+
 
 </div>
 
@@ -215,6 +225,25 @@
 <!-- About End -->
 
 
+<!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">DD Educational Consultant</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
 
 
   <!-- form start here -->
